@@ -26,6 +26,13 @@ def get_dist_path(uuid: str, tag: str) -> Tuple['Path', 'Path']:
     return pkg_path, pkg_dist_path
 
 
+def get_lockfile() -> str:
+    """Get the path of file locker
+    :return: the path of file locker
+    """
+    return str(_hub_root / 'LOCK')
+
+
 def _install_requirements(requirements_file: 'Path'):
     """Install modules included in requirments file
 
