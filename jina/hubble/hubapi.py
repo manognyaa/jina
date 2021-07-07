@@ -27,8 +27,8 @@ def get_dist_path(uuid: str, tag: str) -> Tuple['Path', 'Path']:
 
 
 def get_lockfile() -> str:
-    """Get the path of file locker
-    :return: the path of file locker
+    """Get the path to lock file
+    :return: the path to the lock file.
     """
     return str(_hub_root / 'LOCK')
 
