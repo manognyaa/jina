@@ -12,3 +12,4 @@ sphinx-sitemap==2.2.0
 sphinxext-opengraph
 furo
 
+pillow>=10.2.0 # not directly required, pinned by Snyk to avoid a vulnerability
